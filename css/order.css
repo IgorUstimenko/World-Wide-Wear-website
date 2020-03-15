@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #8cafd5;
+  font-family: "Poppins", sans-serif;
+}
+
+.decor {
+  position: relative;
+  max-width: 25rem;
+  margin: 17vh auto 0;
+  text-align: center;
+  background: white;
+  border-radius: 1.2rem;
+}
+
+.form-left-decoration,
+.form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 2.1rem;
+  height: 0.9rem;
+  background: #8cafd5;
+  border-radius: 1rem;
+}
+
+.form-left-decoration {
+  bottom: 2.5rem;
+  left: -1.25rem;
+}
+
+.form-right-decoration {
+  top: 2.5rem;
+  right: -1.25rem;
+}
+
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 2.08rem;
+  height: 0.8333rem;
+  border-radius: 1.25rem;
+  background: white;
+}
+
+.form-left-decoration:before {
+  top: -0.8333rem;
+}
+
+.form-left-decoration:after {
+  top: -0.8333rem;
+  left: 0.41rem;
+}
+
+.form-right-decoration:before {
+  top: -0.8333rem;
+  right: 0;
+}
+
+.form-right-decoration:after {
+  top: -0.8333rem;
+  right: 0.41rem;
+}
+
+.circle {
+  position: absolute;
+  bottom: 3.333em;
+  left: -2.29rem;
+  width: 0.8333rem;
+  height: 0.8333rem;
+  border-radius: 50%;
+  background: white;
+}
+
+.form-inner {
+  padding: 2.08rem;
+}
+
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 0.8333rem;
+  margin-bottom: 0.625rem;
+  background: #e9eff6;
+  line-height: 1.5rem;
+  border-width: 0;
+  border-radius: 0.8333rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.sumbit-btn {
+  margin-top: 1.25rem;
+  background: #8cafd5;
+  border-radius: 0.833rem;
+  border: 0;
+  color: white;
+  font-size: 0.58333rem;
+  width: 35em;
+  height: 3em;
+}
+
+.tiny-inputs {
+  display: flex;
+}
+
+.form-inner h3 {
+  margin-top: -1.2em;
+  margin-bottom: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #707981;
+}
+
+.back-arrow {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 18em;
+  opacity: 0.8;
+}
+
+
+@media (max-device-width: 480px) {
+  .tiny-inputs {
+    display: block;
+  }
+
+  .decor {
+    position: relative;
+    max-width: 100vh;
+    margin: 0vh auto 0;
+    height: 100vh;
+    border-radius: 0em;
+  }
+
+  .form-left-decoration:before,
+  .form-left-decoration:after,
+  .form-right-decoration:before,
+  .form-right-decoration:after {
+    display: none;
+  }
+
+  .form-left-decoration:before {
+    display: none;
+  }
+
+  .form-left-decoration:after {
+    display: none;
+  }
+
+  .form-right-decoration:before {
+    display: none;
+  }
+
+  .form-right-decoration:after {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .form-left-decoration {
+    display: none;
+  }
+
+  .form-right-decoration {
+    display: none;
+  }
+
+  .sumbit-btn {
+    margin-top: 40px;
+    width: 20em;
+    height: 3em;
+  }
+}

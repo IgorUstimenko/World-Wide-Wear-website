@@ -1,0 +1,142 @@
+.hoodie-wrapper-page {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+}
+
+.watermark {
+    opacity: 0.6;
+    margin-top: 4.1em;
+    font-weight: normal;
+    font-size: 0.95rem;
+}
+
+.left-side {
+    margin-left: 2em;
+}
+
+.link {
+    display: flex;
+}
+
+.back-to-main {
+    color: #000;
+}
+
+.current-page {
+    color: #000;
+    opacity: 0.4;
+}
+
+.features {
+    margin-top: 1em;
+}
+
+.right-side {
+    margin-top: -1.7em;
+    margin-right: 12em;
+}
+
+.wm-zoom-container {
+    margin-left: 0.5em;
+}
+
+.world-wide-hoodie-order {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3em;
+    color: #8cafd5;
+
+}
+
+.world-wide-hoodie-order h2 {
+    font-size: 1rem;
+    margin-top: 0.7em;
+    color: #000;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.world-wide-hoodie-order h3 {
+    font-size: 1.3rem;
+    margin-top: 0.7em;
+    color: #000;
+    margin-right: 0.8em;
+}
+
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.order-btn {
+    font-weight: bold;
+    margin-top: 0.3em;
+    white-space: nowrap;
+    border-bottom: 4px solid #8cafd5;
+    width: 8.7em;
+}
+
+.wm-zoom-default-img {
+    width: 20.5em;
+    height: 20.5em;
+}
+
+.features-li {
+    line-height: 1.3em;
+}
+
+
+
+@media (max-device-width: 480px) {
+    .hoodie-wrapper-page {
+        display: block;
+        justify-content: space-around;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .watermark {
+        display: none;
+    }
+
+    .link {
+        display: block;
+    }
+
+    .back-to-main {
+        margin-left: 0.5em;
+    }
+
+    .wm-zoom-default-img {
+        width: 20rem;
+        height: 20rem;
+        margin-left: -16vh;
+    }
+
+    .right-side {
+        text-align: center;
+        display: block;
+        margin-top: -3em;
+        margin-right: 0em;
+    }
+
+    .world-wide-hoodie-order {
+        text-align: center;
+    }
+
+    .price {
+        display: block;
+        text-align: center;
+    }
+
+    .order-btn {
+        margin-left: 8vh;
+        margin-bottom: 4em;
+    }
+
+    .left-side {
+        margin: 0;
+        text-align: center;
+    }
+}

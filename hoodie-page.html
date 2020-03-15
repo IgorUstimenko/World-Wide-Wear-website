@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hoodie-page.css">
+    <link rel="stylesheet" href="./css/jquery.wm-zoom-1.0.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <title>WORLDWIDE HOODIE</title>
+</head>
+
+<body>
+    <div class="logo-wrapper animated bounceInDown delay-0s slower">
+        <img src="./img/wdwd.png" alt="Logo" class="wdwd-logo">
+    </div>
+    <div class="hoodie-wrapper-page">
+        <div class="left-side">
+            <div class="link animated bounceInLeft delay-0s slower">
+                <a class="back-to-main" href="index.html">Главная / </a>
+                <h2 class="current-page">&nbsp; WORLDWIDE HOODIE</h2>
+            </div>
+            <!-- /.link -->
+            <div class="wm-zoom-container my-zoom-2">
+                <div class="wm-zoom-box animated bounceInLeft delay-0s slower">
+                    <img src="./img/hoodie.png" class="wm-zoom-default-img" data-hight-src="./img/big.png">
+                </div>
+            </div>
+            <div class="watermark  animated bounceInLeft delay-0s slower">&#169; 2020 Все права защищены</div>
+        </div>
+        <!-- /.left-side -->
+        <div class="right-side  animated bounceInLeft delay-0s slower">
+            <div class="world-wide-hoodie-order">
+                <h1>WORLDWIDE HOODIE</h1>
+                <div class="price">
+                    <h3>2 999,00 ₽</h3>
+                    <h2>3 999,00 ₽</h2>
+                </div>
+                <!-- /.price -->
+            </div>
+            <div class="features">
+                <ul class="features-ul">
+                    <li class="features-li">– Плотный футер 350гм/м</li>
+                    <!-- /.features-li -->
+                    <li class="features-li">– 100% хлопок</li>
+                    <!-- /.features-li -->
+                    <li class="features-li">– Принт: шелкография</li>
+                    <!-- /.features-li -->
+                    <li class="features-li">– Собственные лекала</li>
+                    <!-- /.features-li -->
+                    <li class="features-li">– Размеры: S / M / L</li>
+                    <!-- /.features-li -->
+                </ul>
+            </div>
+            <!-- /.features -->
+            <a href="order.html">
+                <div class="order-btn more-btn">
+                    Оставить заявку
+                </div>
+                <!-- /.order-btn -->
+            </a>
+            <!-- /.world-wide-hoodie-order -->
+
+        </div>
+        <!-- /.right-side -->
+    </div>
+    <!-- /.hoodie-wrapper-page -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.wm-zoom-1.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my-zoom-1').WMZoom();
+            $('.my-zoom-2').WMZoom({
+                config: {
+                    inner: true
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
